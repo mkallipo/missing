@@ -10,13 +10,13 @@ import logging
 from concurrent.futures import ProcessPoolExecutor,wait,ALL_COMPLETED
 
 
-file_path = 'ss_not_open.txt'
+file_path = 'in_crossref.txt'
 
 with open(file_path, 'r') as file:
     missing = [line.strip() for line in file]
     
     
-type_field =["book-section", "book", "book-chapter", "book-part", "book-series", "book-set", "book-track", "edited-book", "reference-book", "monograph", "journal-article", "dissertation", "other", "peer-review", "proceedings", "proceedings-article", "reference-entry", "report", "report-series", "standard", "standard-series", "posted-content", "dataset"]
+type_field = ["book-section", "book", "book-chapter", "book-part", "book-series", "book-set", "book-track", "edited-book", "reference-book", "monograph", "journal-article", "dissertation", "other", "peer-review", "proceedings", "proceedings-article", "reference-entry", "report", "report-series", "standard", "standard-series", "posted-content", "dataset"]
 publishers = ["Test accounts", "CrossRef Test Account"]
 author_names = [",", "none none", "none, none", "none &na;", "(:null)", "test test test", "test test", "test", "&na; &na;"]
 
