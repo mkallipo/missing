@@ -1,6 +1,6 @@
 This repository contains:
 
-**ss_not_open.ipynb**: A Jupyter notebook that creates the ss_not_open.txt file of DOIs found in Semantic Scholar but not in OpenAIRE. 
+**ss_not_open.ipynb**: A Jupyter notebook that creates the `ss_not_open.txt` file of DOIs found in Semantic Scholar but not in OpenAIRE. 
   - Input 1: `all_dois.csv`: a CSV with all DOIs found in OpenAIRE.
   - Input 2: all DOIs found in Semantic Scholar
 
