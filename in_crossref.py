@@ -20,7 +20,7 @@ def do(name, df):
 
         df.loc[:, 'DOI'] = df['items'].apply(lambda x: x['DOI'])
        
-        dois = list(df['DOI'])
+        dois = list(df['DOI'].lower().strip())
         intersection = sorted(set(dois).intersection(missing))
         #not_in_crossref = set(missing).difference(set(dois))
 
