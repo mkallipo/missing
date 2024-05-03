@@ -28,7 +28,7 @@ def do(name, df):
         
         authors = []
         for i in range(len(df)):
-            if 'author'  in df['items'][i] and 'title' in  df['items'][i]:
+            if 'author'  in df['items'][i] and 'title' in  df['items'][i] and 'type' in  df['items'][i] and 'publisher' in  df['items'][i]:
                 if len(df['items'][i]['title'])>0 and df['items'][i]['publisher'] not in publishers:
                     authors.append(i)
 
